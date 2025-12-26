@@ -2103,7 +2103,6 @@ struct GameCard: View {
     }
 }
 
-// MARK: - History View
 struct HistoryView: View {
     let storage: AppStorage
     
@@ -2170,10 +2169,8 @@ struct HistoryRow: View {
     }
 }
 
-// MARK: - Settings View
-// MARK: - ✅ ИСПРАВЛЕННЫЙ SettingsView
 struct SettingsView: View {
-    @ObservedObject var storage: AppStorage  // Меняем на @ObservedObject
+    @ObservedObject var storage: AppStorage
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
